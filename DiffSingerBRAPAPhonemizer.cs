@@ -7,6 +7,7 @@ namespace OpenUtau.Core.DiffSinger
     public class DiffSingerBRAPAPhonemizer : DiffSingerG2pPhonemizer
     {
         protected override string GetDictionaryName() => "dsdict-brapa.yaml";
+        protected override string GetLangCode() => "pt";
         protected override IG2p LoadBaseG2p() => new BrapaG2p();
         protected override string[] GetBaseG2pVowels() => new string[] {
             "a", "ae", "an", "ax", "e", "eh", "en", "i", "i0","in",
