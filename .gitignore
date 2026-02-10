@@ -1,0 +1,6 @@
+/.vs
+/bin
+/obj
+/.idea
+*.user
+diffs_brapa_phonemizer.sln

@@ -1,14 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenUtau.Core\OpenUtau.Core.csproj" />
-    <ProjectReference Include="..\OpenUtau.Plugin.Builtin\OpenUtau.Plugin.Builtin.csproj" />
+    <!--<ProjectReference Include="..\OpenUtau.Core\OpenUtau.Core.csproj" />
+    <ProjectReference Include="..\OpenUtau.Plugin.Builtin\OpenUtau.Plugin.Builtin.csproj" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.ML.OnnxRuntime">
+      <HintPath>E:\OpenUtau-master\OpenUtau.Test\bin\Debug\net8.0-windows\Microsoft.ML.OnnxRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenUtau">
+      <HintPath>E:\OpenUtau-master\OpenUtau.Test\bin\Debug\net8.0-windows\OpenUtau.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenUtau.Core">
+      <HintPath>E:\OpenUtau-master\OpenUtau.Test\bin\Debug\net8.0-windows\OpenUtau.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenUtau.Plugin.Builtin">
+      <HintPath>E:\OpenUtau-master\OpenUtau.Test\bin\Debug\net8.0-windows\OpenUtau.Plugin.Builtin.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
